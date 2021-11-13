@@ -7,8 +7,6 @@ ThisBuild / javaOptions += "-XX:MaxMetaspaceSize=1024m"
 Global / cancelable := true
 Global / onChangedBuildSource := ReloadOnSourceChanges
 
-Docker / publish := {}
-
 lazy val app = project
   .in(file("sudoku"))
   .settings(
