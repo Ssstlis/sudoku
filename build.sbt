@@ -12,7 +12,7 @@ Docker / publish := {}
 lazy val app = project
   .in(file("sudoku"))
   .settings(
-    name := "soduku",
+    name := "sudoku",
     version := "0.0.1",
     excludeDependencies += "org.typelevel" %% "simulacrum-scalafix-annotations",
     Compile / console / scalacOptions ~= (_.filterNot(_ == "-Xfatal-warnings")),
